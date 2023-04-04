@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Kalkulator za zaradu milijun kuna</string>
+    <string name="monthly_pay">Mjesečna plaća:</string>
+    <string name="utilities">Režije:</string>
+    <string name="rent">Stanarina:</string>
+    <string name="other_costs">Ostali troškovi:</string>
+    <string name="calculate">Izračunaj</string>
+    <string name="inputError">Neispravan unos</string>
+    <string name="years">GODINA</string>
+    <string name="adjective">PUNO</string>
+    <string name="imageText">Slikica za smirenje</string>
+
+</resources>

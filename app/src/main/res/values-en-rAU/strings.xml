@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculator for earning one million kuna mate</string>
+    <string name="monthly_pay">Monthly pay:</string>
+    <string name="utilities">Utilities:</string>
+    <string name="rent">Rent:</string>
+    <string name="other_costs">Other costs:</string>
+    <string name="calculate">Calculate</string>
+    <string name="inputError">Incorrect input</string>
+    <string name="years">YEARS</string>
+    <string name="adjective">A LOT</string>
+    <string name="imageText">Duckie for relaxing</string>
+</resources>

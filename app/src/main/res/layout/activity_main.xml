@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/monthlyPayText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/monthly_pay"
+        app:layout_constraintBottom_toBottomOf="@+id/monthlyPayInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAllCaps="true"/>
+
+    <EditText
+        android:id="@+id/monthlyPayInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/monthlyPayText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rentText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/rent"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="@+id/utilitiesInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rentInput" />
+
+    <EditText
+        android:id="@+id/rentInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/monthlyPayText"
+        app:layout_constraintTop_toBottomOf="@+id/monthlyPayInput" />
+
+    <TextView
+        android:id="@+id/utilitesText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/utilities"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="@+id/rentInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthlyPayInput" />
+
+    <EditText
+        android:id="@+id/utilitiesInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/monthlyPayText"
+        app:layout_constraintTop_toBottomOf="@+id/rentInput" />
+
+    <TextView
+        android:id="@+id/otherCostsText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/other_costs"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="@+id/otherCostsInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/utilitiesInput" />
+
+    <EditText
+        android:id="@+id/otherCostsInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/monthlyPayText"
+        app:layout_constraintTop_toBottomOf="@+id/utilitiesInput" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="@string/calculate"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otherCostsInput"></Button>
+
+    <TextView
+        android:id="@+id/calculation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculate" />
+
+    <Switch
+        android:id="@+id/themeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/calculation"
+        app:layout_constraintTop_toBottomOf="@+id/calculate" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/imageText"
+        app:layout_constraintBottom_toBottomOf="@+id/image1"
+        app:layout_constraintEnd_toStartOf="@+id/image1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image1" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/duckie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/calculation"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/calculation"
+        app:layout_constraintTop_toBottomOf="@+id/calculate"
+        app:layout_constraintVertical_bias="0.498" />
+</androidx.constraintlayout.widget.ConstraintLayout>

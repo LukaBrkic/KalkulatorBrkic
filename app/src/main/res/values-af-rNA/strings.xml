@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sakrekenaar om een miljoen kuna te verdien</string>
+    <string name="monthly_pay">Maandelikse betaling:</string>
+    <string name="utilities">Regie:</string>
+    <string name="rent">Stanarina:</string>
+    <string name="other_costs">Ander uitgawes:</string>
+    <string name="calculate">Bereken</string>
+    <string name="inputError">Slegte sommige</string>
+    <string name="years">OUDERDOM</string>
+    <string name="adjective">Baie</string>
+    <string name="imageText">Rustiger prentjie</string>
+</resources>
